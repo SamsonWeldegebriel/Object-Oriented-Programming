@@ -17,7 +17,7 @@ public class Prog5 {
 					System.out.print("+");
 				else
 					System.out.print(" ");
-				System.out.print(String.format(" %2d ", ranNum[i][j]));
+				System.out.print(String.format(" %2d   ", ranNum[i][j]));
 				
 			
 				
@@ -26,7 +26,7 @@ public class Prog5 {
 			for(int j=0; j<ranNum.length; j++)
 			{
 			if(i%2!=0)
-				System.out.print(" ____");
+				System.out.print(" ____  ");
 			
 			}
 			if(i%2!=0)

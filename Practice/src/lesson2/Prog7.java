@@ -37,5 +37,5 @@ Length of "Of" : 2
 Length of "Strings" : 7
 Length of "Only." : 5
 The Number of inputs that starts with A: 5
- *
+ * 
  * */

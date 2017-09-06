@@ -16,3 +16,7 @@ public class Prog4 {
 	}
 
 }
+
+/*  input:  Hello
+	output: olleH
+*/

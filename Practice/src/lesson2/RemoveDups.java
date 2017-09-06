@@ -1,18 +1,18 @@
 package lesson2;
 
+import java.util.Arrays;
+
 public class RemoveDups {
 	
 	public static void main(String[] args){
 		
-		String[] input = {"horse", "dog", "cat", "horse","dog"};
-		String[] temp = input;// new String[input.length]; 
+		String[] input = {"horse","dog", "cat", "horse","dog"};
+		String[] temp = input;
 		int index = 0;
 		String[] output = new String[input.length];
 		
 		boolean unique = true;
 		
-		//output[0] = input[0];
-		//= new String[input.length];
 				
 		for(int i=0; i< input.length; i++)
 		{
@@ -41,15 +41,12 @@ public class RemoveDups {
 			
 		}
 		
-		
-		
-		for(int i=0; i < output.length; i++)
-		{
-			System.out.println(output[i]);
-		}
-	
-		
-		
+		System.out.print(Arrays.toString(output));
 	}
-
 }
+
+/*
+ * 
+ * Output: [horse, dog, cat]
+ * 
+ */

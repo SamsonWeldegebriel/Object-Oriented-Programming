@@ -19,3 +19,7 @@ public class Prog2 {
 	}
 
 }
+
+/*Out put:  14
+			15
+*/

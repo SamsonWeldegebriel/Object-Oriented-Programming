@@ -4,9 +4,9 @@ import lesson2.RandomNumbers;
 public class Prog5 {
 	
 	public static void main(String[] args)
-	{
+	{ 
 		int[][] ranNum = new int[4][4];
-		
+		 
 		for(int i=0; i<ranNum.length; i++)
 		{
 			for(int j=0; j<ranNum.length; j++)

@@ -41,7 +41,7 @@ public class HeartRates {
 		}
 		
 	    public int getMHR() {
-	    	return MHR;
+	    	return this.MHR;
 	    }
 	    
 	    public String calculateTargetHeartRateRange() {
@@ -60,7 +60,7 @@ public class HeartRates {
 	    public String toString()
 	    {	    	
 	    	return "[" + firstName + " " + lastName + " was born on " +  dateOfBirth + " and is " +
-	    			calculateAge(dateOfBirth) + " years old with "  + "MHR of: " + getMHR() + "]";
+	    			calculateAge(dateOfBirth) + " years old with "  + "MHR of: " + MHR + "]";
 	    }
 	
 	    public String getFirstName() {
@@ -93,8 +93,10 @@ public class HeartRates {
 
 		public static void main(String[] args)
 	    {
-			LocalDate ld = LocalDate.parse("2001-5-12", HeartRates.formatter);
+			LocalDate ld = LocalDate.parse("1975-5-18", HeartRates.formatter);
 	    	HeartRates hr = new HeartRates("Jose", "Morinho", ld);
+	    	hr.setMHR(hr.MHR);
+	    	
 	    	//LocalDate birthDay = LocalDate(2012,12,1);
 	    	//System.out.println(hr.calculateAge(hr.birthDate));
 
@@ -102,3 +104,10 @@ public class HeartRates {
 	    }
 
 }
+
+/*
+ * 
+ * Output:
+ * 
+ * [Jose Morinho was born on 1975-05-18 and is 42 years old with MHR of: 178]
+ */

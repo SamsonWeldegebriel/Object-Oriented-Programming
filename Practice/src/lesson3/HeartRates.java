@@ -104,3 +104,10 @@ public class HeartRates {
 	    }
 
 }
+
+/*
+ * 
+ * Output:
+ * 
+ * [Jose Morinho was born on 1975-05-18 and is 42 years old with MHR of: 178]
+ */

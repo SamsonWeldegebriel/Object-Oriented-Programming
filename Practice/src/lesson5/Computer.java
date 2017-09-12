@@ -87,8 +87,15 @@ public class Computer {
 		System.out.println(c3.hashCode());
 
 	}
-
-
-
-
 }
+
+/*
+ * Out put: 
+[Dell, intel i-5, 8, 500, 2.3]
+true
+false
+335544320
+335544320
+-1056964608
+*
+*/

@@ -10,26 +10,27 @@ package lesson4;
 public class MinimumCharacter {
 
 	
-	public static String minimumCharacter(String input, String minChar)
+	public static Character minimumCharacter(String input)
 	{
-		if(input.length()  < 1)
+		if(input.length() == 0 || input == null )
 		{
-			return minChar;
+			return null;
 		}
 		else
 		{
-			if(minChar.charAt(0)>input.charAt(0))
-				minChar = input.substring(0, 1);
-			return  minimumCharacter(input.substring(1), minChar);
+			char minChar = input.charAt(0);
+			if(input.length() == 1) return minChar;
+			
+			char c = minimumCharacter(input.substring(1));
+			return (minChar < c ? minChar: c);
 		}
 		
 		//return '0';
 	}
 	public static void main(String[] args) {
 		
-		String input = "performance";
-		
-		System.out.println("Minimum Character: " + minimumCharacter(input, input.substring(0, 1)));
+		String input = "performance";		
+		System.out.println("Minimum Character: " + minimumCharacter(input));
 
 	}
 

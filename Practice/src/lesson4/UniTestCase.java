@@ -23,7 +23,6 @@ public class UniTestCase {
 		boolean Eoutput = true;
 		assertEquals(Ooutput, Eoutput);
 		
-		
 	}
 
 }

@@ -1,5 +1,9 @@
 package lesson4;
 
+/**
+ * @author Samson Mebrahtu Weldegebriel
+ *
+ */
 public class MergeStrings {
 	
 	
@@ -10,7 +14,7 @@ public class MergeStrings {
 	private static String privateMergeStrings(String s1, String s2, String Output)
 	{
 		
-		if((s1.equals("") || s1 ==null) &&  (s2.equals("") || s1 == null))
+		if((s1.equals("") || s1 == null) &&  (s2.equals("") || s1 == null))
 		{
 			return "";
 		}
@@ -26,17 +30,17 @@ public class MergeStrings {
 		
 		else
 		{
-			if(s1.charAt(0) <= s2.charAt(0))
+			if(s1.charAt(0) < s2.charAt(0))
 			{
 				Output += s1.charAt(0);
-				s1 = s1.substring(1);
+				return privateMergeStrings(s1.substring(1), s2, Output);
 			}
 			else
 			{
 				Output += s2.charAt(0);
-				s2 = s2.substring(1);
+				return privateMergeStrings(s1, s2.substring(1), Output);
 			}	
-			return privateMergeStrings(s1, s2, Output);
+			
 		}
 	}
 	 

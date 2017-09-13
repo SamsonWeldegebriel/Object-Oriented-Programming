@@ -69,7 +69,7 @@ public class Computer {
 		
 		int hashcode = 7 * manufacturer.hashCode() * processor.hashCode() * Integer.valueOf(ramSize)  * Integer.valueOf(ramSize).hashCode()  * Integer.valueOf(diskSize).hashCode() * Double.valueOf(processorSpeed).hashCode() ;
 		return hashcode;
-	}
+	} 
 	
 	
 	public Object clone() throws CloneNotSupportedException

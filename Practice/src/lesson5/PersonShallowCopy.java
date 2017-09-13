@@ -52,3 +52,13 @@ public class PersonShallowCopy {
 	}
 
 }
+
+/*
+ * 
+ * PersonShallowCopy [name=Alexander, computer=[Dell, Itel-Core-i6, 6, 800, 2.8]]
+PersonShallowCopy [name=Alexander, computer=[Dell, Itel-Core-i6, 6, 800, 2.8]]
+PersonShallowCopy [name=Alexander, computer=[HP, Itel-Core-i6, 6, 800, 2.8]]
+PersonShallowCopy [name=Abera, computer=[HP, Itel-Core-i6, 6, 800, 2.8]]
+
+ * 
+ */

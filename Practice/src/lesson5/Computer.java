@@ -77,7 +77,7 @@ public class Computer {
 		Computer p1 = new Computer(this.manufacturer, this.processor,  this.ramSize, this.diskSize, this.processorSpeed);		
 		return p1;
 	}
-
+ 
 	public static void main(String[] args) {
 
 		Computer c1 = new Computer("Dell","intel i-5", 8, 500, 2.3);

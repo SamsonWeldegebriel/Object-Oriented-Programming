@@ -50,3 +50,11 @@ public class PersonDeepCopy {
 	}
 
 }
+
+/*
+ * 
+ * PersonDeepCopy [name=Alexander, computer=[Dell, Itel-Core-i6, 6, 800, 2.8]]
+PersonDeepCopy [name=Alexander, computer=[Dell, Itel-Core-i6, 6, 800, 2.8]]
+PersonDeepCopy [name=Abera, computer=[HP, Itel-Core-i6, 6, 800, 2.8]]
+PersonDeepCopy [name=Alexander, computer=[Dell, Itel-Core-i6, 6, 800, 2.8]]
+*/

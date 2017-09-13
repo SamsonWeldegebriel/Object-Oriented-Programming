@@ -71,6 +71,12 @@ public class Computer {
 		return hashcode;
 	}
 	
+	
+	public Object clone() throws CloneNotSupportedException
+	{
+		Computer p1 = new Computer(this.manufacturer, this.processor,  this.ramSize, this.diskSize, this.processorSpeed);		
+		return p1;
+	}
 
 	public static void main(String[] args) {
 

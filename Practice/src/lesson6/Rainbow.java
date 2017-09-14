@@ -1,6 +1,8 @@
 package lesson6;
 
 import java.awt.Color;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.*;
 import javax.swing.border.Border;
@@ -28,11 +30,29 @@ public class Rainbow {
 		red.setBorderPainted(false);
 		mainFrame.add(red);
 		
+		red.addActionListener(new ActionListener(){
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				JOptionPane.showMessageDialog(mainFrame,
+				"Red signifies passion, vitality, enthusiasm and security.");
+			}});
+		
+	
+		
+		
 		JButton orange = new JButton("Orage");
 		orange.setBounds(100, 0, 100, 100);
 		orange.setBackground(Color.orange);
 		orange.setBorderPainted(false);
 		mainFrame.add(orange);
+		
+		orange.addActionListener(new ActionListener(){
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				JOptionPane.showMessageDialog(mainFrame,
+				"Orange is a dynamic color representing creativity, practicality, playfulness as well as equilibrium or control.");
+			}});
+		
 		
 		
 		JButton green = new JButton("green");
@@ -41,11 +61,26 @@ public class Rainbow {
 		green.setBorderPainted(false);
 		mainFrame.add(green);
 		
+		red.addActionListener(new ActionListener(){
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				JOptionPane.showMessageDialog(mainFrame,
+				"Red signifies passion, vitality, enthusiasm and security.");
+			}});
+		
+		
 		JButton blue = new JButton("blue");
 		blue.setBounds(300, 0, 100, 100);
 		blue.setBackground(Color.blue);
 		red.setBorderPainted(false);
 		mainFrame.add(blue);
+		
+		red.addActionListener(new ActionListener(){
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				JOptionPane.showMessageDialog(mainFrame,
+				"Red signifies passion, vitality, enthusiasm and security.");
+			}});
 		
 		
 		JButton yellow = new JButton("yellow");
@@ -54,18 +89,38 @@ public class Rainbow {
 		yellow.setBorderPainted(false);
 		mainFrame.add(yellow);
 		
+		red.addActionListener(new ActionListener(){
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				JOptionPane.showMessageDialog(mainFrame,
+				"Red signifies passion, vitality, enthusiasm and security.");
+			}});
+		
 		JButton indigo = new JButton("Indigo");
 		indigo.setBounds(500, 0, 100, 100);
 		indigo.setBackground(new Color(75,0,130));
 		indigo.setBorderPainted(false);
 		mainFrame.add(indigo);
 		
+		red.addActionListener(new ActionListener(){
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				JOptionPane.showMessageDialog(mainFrame,
+				"Red signifies passion, vitality, enthusiasm and security.");
+			}});
+		
 		JButton violet = new JButton("violet");
 		violet.setBounds(600, 0, 100, 100);
 		violet.setBackground(new Color(148, 0, 211));
 		violet.setBorderPainted(false);
-		
 		mainFrame.add(violet);
+		
+		red.addActionListener(new ActionListener(){
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				JOptionPane.showMessageDialog(mainFrame,
+				"Red signifies passion, vitality, enthusiasm and security.");
+			}});
 	}
 	
 	public static void main(String[] args) {
@@ -75,8 +130,8 @@ public class Rainbow {
 	/*
 	 * 
 	 * 
-	 * Red– This is the first color of the rainbow from top. Red signifies passion, vitality, enthusiasm and security. It is the light with the longest wavelength.
-Orange– This light or color is a combination of yellow and red. It is a dynamic color representing creativity, practicality, playfulness as well as equilibrium or control.
+	 *  It is the light with the longest wavelength.
+Orange– This light or color is a combination of yellow and red. 
 Yellow– This is the color of the sunshine itself. It represents clarity of thought, wisdom, orderliness and energy.
 Green– This is the middle color of the rainbow and denotes fertility, growth, balance, health and wealth.
 Blue– This the fifth color of the rainbow which makes us think of the Unknown. The sky and the wide oceans are in this color and hence it has been associated with Spirituality and Divinity.

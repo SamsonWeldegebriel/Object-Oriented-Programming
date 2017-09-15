@@ -44,6 +44,10 @@ public class SwingStringOperations {
 		inputLabel.setBounds(250, 40, 200, 30);
 		outputLabel.setBounds(250, 100, 200, 30);		
 		
+
+		this.addToPanel();
+		this.stringOperations();
+		
 		
 	}
 	
@@ -105,8 +109,6 @@ public class SwingStringOperations {
 		
 		SwingStringOperations sso = new SwingStringOperations();
 		sso.drawFrame();
-		sso.addToPanel();
-		sso.stringOperations();
 	}
 
 }

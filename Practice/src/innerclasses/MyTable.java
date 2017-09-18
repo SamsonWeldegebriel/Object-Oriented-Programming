@@ -10,11 +10,10 @@ public class MyTable {
 		for(Entry e: entries)
 		{
 			if(e != null)
-			if(e.index == c)
-			{
-				
-				str = e.value;
-			}
+				if(e.index == c)
+				{					
+					str = e.value;
+				}
 		}
 		
 		
@@ -24,7 +23,13 @@ public class MyTable {
 	// adds to the table a pair (c, s) so that s can be looked up using c
 	public void add(char c, String s) {
 		this.i = c % 97;
-		entries[i] = new Entry(c,s);
+		String ch = Character.valueOf(c).toString();
+		if(!s.substring(0, 1).equalsIgnoreCase(ch))
+		{
+			System.out.println("Index:" + ch + " and value:" + s + " miss match! \n");
+		}
+		else
+			entries[i] = new Entry(c,s);
 	}
 
 	// returns a String consisting of nicely formatted display
@@ -61,8 +66,22 @@ public class MyTable {
 		t.add('a', "Andrew");
 		t.add('b',"Billy");
 		t.add('c',"Charlie");
+		t.add('j', "Rock");
+		t.add('s', "Samson");
 		String s = t.get('b');
-		System.out.println(s);
+		System.out.println("The value of get(b):"+s);
 		System.out.println(t);
 	}
 }
+
+/* Out put:
+ * 
+Index:j and value:Rock miss match! 
+
+The value of get(b):Billy
+
+a->Andrew
+b->Billy
+c->Charlie
+s->Samson
+*/

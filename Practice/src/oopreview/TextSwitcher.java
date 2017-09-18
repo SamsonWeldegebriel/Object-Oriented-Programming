@@ -39,10 +39,16 @@ public class TextSwitcher extends JFrame{
 		centerPanel = new JPanel();
 		centerPanel.setLayout(new FlowLayout(FlowLayout.CENTER));
 		JButton b = new JButton("Switch");
-		b.addActionListener(new ButtonListener());
+		b.addActionListener( e -> {
+			
+			String temp = leftText.getText();
+			leftText.setText(rightText.getText());
+			rightText.setText(temp);
+		} );
 		centerPanel.add(b);
 		}
 	
+	/*
 	class ButtonListener implements ActionListener
 	{
 			public void actionPerformed(ActionEvent e)
@@ -53,6 +59,7 @@ public class TextSwitcher extends JFrame{
 			}
 	}
 	
+	*/
 	public static void main(String[] args)
 	{
 		new TextSwitcher().setVisible(true);;

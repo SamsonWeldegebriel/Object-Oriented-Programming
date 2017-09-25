@@ -34,3 +34,25 @@ class OutOfRangeException extends Exception{
 		System.out.println("Mark value should be from 0 to 100");
 	}
 }
+
+
+/* Output:
+
+Enter mark in the range of 0 to 100: 
+100
+The input is: 100
+
+Enter mark in the range of 0 to 100: 
+-5
+Mark value should be from 0 to 100
+Exception in thread "main" exceptionHandling.OutOfRangeException
+	at exceptionHandling.Range0To100.main(Range0To100.java:18)
+
+
+Enter mark in the range of 0 to 100: 
+111
+Mark value should be from 0 to 100
+Exception in thread "main" exceptionHandling.OutOfRangeException
+	at exceptionHandling.Range0To100.main(Range0To100.java:18)
+
+*/
